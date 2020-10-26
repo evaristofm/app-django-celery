@@ -1,0 +1,16 @@
+<h1>Django Celery Example</h1>
+
+<a href="{% url 'generate' %}">Generate ramdon users</a> |
+<a href="{% url 'users_list' %}">Users List</a>
+
+
+
+<hr>
+<h3>Generate Random Users</h3> 
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Enviar">
+</form>
+<p>between 50 - 500</p>

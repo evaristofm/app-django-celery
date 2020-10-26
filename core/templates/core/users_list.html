@@ -1,0 +1,20 @@
+<h1>Django Celery Example</h1>
+
+<a href="{% url 'generate' %}">Generate ramdon users</a> |
+<a href="{% url 'users_list' %}">Users List</a>
+
+
+
+<hr>
+
+<h3>User list</h3>
+
+{% for message in messages %}
+    {{ message }}
+{% endfor%}
+
+<ul>
+   {% for user in users %}
+     <li> {{ user  }} - {{ user.email }} - {{ user.date_joined }} </li>
+   {% endfor %}
+</ul>
